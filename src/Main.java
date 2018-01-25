@@ -12,7 +12,7 @@ public class Main {
                 "problem z nawiasami",
                 "ok"
         };
-        String path = "C:/Users/Tomek/Desktop/pewnykatalog/";
+        String path = "Projekty/";
         try {
             File directory = new File(path);
             PrintWriter writer = new PrintWriter(path+"__raport.txt", "UTF-8");

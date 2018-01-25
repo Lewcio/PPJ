@@ -23,25 +23,13 @@ public class LinkedList {
         }
         size++;
     }
-    public Character pop() {
-        Node node = first;
-        first = first.next;
-        size--;
-        return node.value;
-    }
-    public boolean hasNext() {
-        if (size > 0) {
-            return true;
-        }
-        return false;
-    }
     public boolean hasText(String text) {
         Node node = first;
         int r = 0;
         while (node.next != null) {
             if (text.charAt(r) == node.value) {
                 r++;
-                if (r >= text.length()-1) return true;
+                if (r > text.length() - 1) return true;
             } else {
                 r = 0;
             }
